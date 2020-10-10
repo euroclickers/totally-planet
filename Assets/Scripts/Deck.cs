@@ -101,6 +101,39 @@ public class Deck : MonoBehaviour
                 }
             }
         });
+        
+        cards.Push(new Card()
+        {
+            title = "Carta 4",
+            effects = new List<Effect>() {
+                new Effect()
+                {
+                    effectType = EffectType.POPULATION,
+                    modifier = 1.3
+                },
+                new Effect()
+                {
+                    effectType = EffectType.WATER,
+                    modifier = 0.8
+                },
+                new Effect()
+                {
+                    effectType = EffectType.NATURE,
+                    modifier = 0.8
+                }
+            }
+        });
+        cards.Push(new Card()
+        {
+            title = "Carta 5",
+            effects = new List<Effect>() {
+                new Effect()
+                {
+                    effectType = EffectType.TEMPERATURE,
+                    modifier = 1.3
+                }
+            }
+        });
 
         return cards;
     }
