@@ -24,7 +24,7 @@ public class Effect : MonoBehaviour
                 resourceManager.SetNature(resourceManager.nature * modifier);
                 break;
             case EffectType.TEMPERATURE:
-                resourceManager.SetTemperatura(resourceManager.temperature * modifier);
+                resourceManager.SetTemperature(resourceManager.temperature * modifier);
                 break;
             case EffectType.WATER:
                 resourceManager.SetWater(resourceManager.water * modifier);
