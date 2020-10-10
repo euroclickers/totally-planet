@@ -62,18 +62,19 @@ public class Card : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("hi");
         foreach(var effect in effects)
         {
             effect.apply();
         }
-        var resourceManager = GameObject.Find("ResourceManager").GetComponent<ResourceManager>();
-        resourceManager.ResourceUpdate();
+        var gameDirector = GameObject.Find("GameDirector").GetComponent<GameDirector>();
+        gameDirector.NextTurn();
     }
 
-    public void cloneProperties(Card card)
+    public Card cloneProperties(Card card)
     {
         effects = card.effects;
         title = card.title;
+
+        return this;
     }
 }
