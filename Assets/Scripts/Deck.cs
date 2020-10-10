@@ -53,7 +53,6 @@ public class Deck : MonoBehaviour
                 }
             }
         });
-        /*
         cards.Push(new Card()
         {
             title = "Carta 2",
@@ -102,7 +101,7 @@ public class Deck : MonoBehaviour
                 }
             }
         });
-        */
+        
         cards.Push(new Card()
         {
             title = "Carta 4",
