@@ -25,6 +25,8 @@ public class Card : MonoBehaviour
         {
             effect.apply();
         }
+        var resourceManager = GameObject.Find("ResourceManager").GetComponent<ResourceManager>();
+        resourceManager.ResourceUpdate();
     }
 
     public void cloneProperties(Card card)
