@@ -65,7 +65,8 @@ public class ResourceManager : MonoBehaviour
         UpdateCanvas();
     }
 
-    private double GaussDistribution(double x, double a, double b, double c)  // f(x) = a * e^(-(b-100)^2/(2 * c^2)) where "a" controls the height, "b" controls the center and "c" the width 
+    // f(x) = a * e^(-(x-b)^2/(2 * c^2)) where "a" controls the height, "b" controls the center and "c" the width 
+    private double GaussDistribution(double x, double a, double b, double c)
     {
         var v1 = (x - b);
         var v2 = (v1 * v1) / (2 * (c * c));

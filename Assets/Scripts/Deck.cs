@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -10,8 +11,9 @@ public class Deck : MonoBehaviour
     public Deck(int seed)
     {
         Debug.Log("Start Deck");
-        Debug.Log("Start Deck");
+        
         cards = loadCards();
+
         var rnd = new System.Random(seed);
         cards = new Stack<Card>(cards.OrderBy(a => rnd.Next()));
     }
@@ -32,9 +34,60 @@ public class Deck : MonoBehaviour
         return cards.Pop();
     }
 
+    public int Count {
+        get  {
+            if (cards != null && cards.Any())
+                return cards.Count;
+            return 0;
+        }
+    }
+
     private Stack<Card> loadCards()
     {
+
+        /*
+
+
+        Stack<Card> result = null;
+
+        TextAsset cardsAsset = null;
+        List<Card> cardList = null;
+
+        try {
+            
+            Debug.Log("Cards loading from json init");
+
+            result = new Stack<Card>();
+
+            cardsAsset = Resources.Load("Text/cards") as TextAsset;
+            cardList = JsonUtility.FromJson<List<Card>>(cardsAsset.text);
+
+            foreach (var currentCard in cardList)
+                result.Push(currentCard);
+
+            Debug.Log(string.Format($"Finished: {result.Count} cards loaded"));
+            Debug.Log("Cards loading from json ended");
+
+        } 
+        catch (Exception ex) {
+            Debug.Log($"Error loading cards: {ex.Message}");
+        }
+        finally {
+            cardsAsset = null;
+            cardList = null;
+        }
+
+        return result;
+        
+        
+
+
+        */
+       
+
+
         var cards = new Stack<Card>();
+        
 
         //TODO load from json
         cards.Push(new Card()
@@ -136,5 +189,6 @@ public class Deck : MonoBehaviour
         });
 
         return cards;
+
     }
 }

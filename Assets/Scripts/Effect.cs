@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Resources;
 using UnityEngine;
 
+[System.Serializable]
 public class Effect : MonoBehaviour
 {
     public EffectType effectType;
     public double modifier;
-
-
 
     public void apply()
     {
