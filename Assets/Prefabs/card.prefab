@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169748525741571413}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.28, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6086335331631883126}
@@ -79,11 +79,13 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169748525741571413}
-  m_Text: Card 1
+  m_Text: 'Card
+
+    Title'
   m_OffsetZ: 0
   m_CharacterSize: 0.23
   m_LineSpacing: 1
-  m_Anchor: 4
+  m_Anchor: 7
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 35

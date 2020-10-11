@@ -11,33 +11,44 @@ public class ResourceManager : MonoBehaviour
 
     public CanvasUI canvas;
 
+    public void initResources(int seed)
+    {
+        var rnd = new System.Random(seed);
+
+        water = rnd.Next(40, 60);
+        temperature = rnd.Next(40, 60);
+        population = rnd.Next(40, 60);
+        nature = rnd.Next(40, 60);
+        UpdateDependentInfo();
+    }
+
     public void SetWater(double water)
     {
         water = normalizeValue(water);
 
         this.water = water;
-        UpdateCanvas();
+        UpdateDependentInfo();
     }
 
     public void SetTemperature(double value)
     {
         temperature = normalizeValue(value);
 
-        UpdateCanvas();
+        UpdateDependentInfo();
     }
 
     public void SetPopulation(double value)
     {
         population = normalizeValue(value);
 
-        UpdateCanvas();
+        UpdateDependentInfo();
     }
 
     public void SetNature(double value)
     {
         nature = normalizeValue(value);
 
-        UpdateCanvas();
+        UpdateDependentInfo();
     }
 
     public void ResourceUpdate()
@@ -60,7 +71,7 @@ public class ResourceManager : MonoBehaviour
         SetWater(newWater);
         SetNature(newNature);
         SetPopulation(newPopulation);
-        UpdateCanvas();
+        UpdateDependentInfo();
     }
 
     // f(x) = a * e^(-(x-b)^2/(2 * c^2)) where "a" controls the height, "b" controls the center and "c" the width 
@@ -85,7 +96,7 @@ public class ResourceManager : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        UpdateCanvas();
+        UpdateDependentInfo();
     }
 
     // Update is called once per frame
@@ -94,8 +105,12 @@ public class ResourceManager : MonoBehaviour
 
     }
 
-    private void UpdateCanvas()
+    private void UpdateDependentInfo()
     {
         canvas.UpdateResourceManagerText(water, population, temperature, nature);
+        InfoBetweenScenes.water = water;
+        InfoBetweenScenes.temperature = temperature;
+        InfoBetweenScenes.population = population;
+        InfoBetweenScenes.nature = nature;
     }
 }

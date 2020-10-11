@@ -1,6 +1,6 @@
 {
 	"cards": [{
-			"title": "Gaia's Intervention",
+			"title": "Gaia's\nIntervention",
 			"quantity": 2,
 			"effects": [{
 					"effectType": 0,
@@ -13,7 +13,7 @@
 			]
 		},
 		{
-			"title": "Global Warming",
+			"title": "Global\nWarming",
 			"quantity": 2,
 			"effects": [{
 					"effectType": 3,
@@ -95,7 +95,7 @@
 			]
 		},
 		{
-			"title": "Winter is coming",
+			"title": "Winter is\ncoming",
 			"quantity": 2,
 			"effects": [{
 					"effectType": 2,
@@ -142,7 +142,7 @@
 			]
 		},
 		{
-			"title": "Global Pandemic",
+			"title": "Global\nPandemic",
 			"quantity": 2,
 			"effects": [{
 					"effectType": 0,
@@ -155,7 +155,7 @@
 			]
 		},
 		{
-			"title": "Industrial Revolution",
+			"title": "Industrial\nRevolution",
 			"quantity": 2,
 			"effects": [{
 					"effectType": 0,
@@ -191,7 +191,7 @@
 			]
 		},
 		{
-			"title": "Zombie Outbreak",
+			"title": "Zombie\nOutbreak",
 			"quantity": 2,
 			"effects": [{
 					"effectType": 0,
