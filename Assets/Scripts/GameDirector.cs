@@ -15,8 +15,11 @@ public class GameDirector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        seed = InfoBetweenScenes.seedToUse;
         seed = (seed == 0) ? new System.Random().Next() : seed;
+        InfoBetweenScenes.seed = seed;
         canvas.UpdateSeedLabel(seed);
+        resourceManager.initResources(seed);
 
         deck = new Deck(seed);
         createdCards = new List<Card>();
@@ -35,18 +38,24 @@ public class GameDirector : MonoBehaviour
     {
         destoryCards();
         resourceManager.ResourceUpdate();
-        checkEndGame();
-        Debug.Log("----New turn----" + deck.Count);
-        generate3Cards();
+        if (!checkEndGame())
+        {
+            Debug.Log("----New turn----" + deck.Count);
+            generate3Cards();
+        }
     }
 
-    private void checkEndGame()
+    private bool checkEndGame()
     {
         if(resourceManager.population <= 0)
         {
+            InfoBetweenScenes.isWin = false;
             Debug.Log("LOSEEER");
             UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+
+            return true;
         }
+        return false;
     }
 
     private void destoryCards()
@@ -69,6 +78,7 @@ public class GameDirector : MonoBehaviour
             canvas.UpdateRemainingCardsLabel(deck.Count);
         }catch(System.InvalidOperationException e)
         {
+            InfoBetweenScenes.isWin = true;
             Debug.Log(e.Message);
             Debug.Log("WINNER");
             UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
