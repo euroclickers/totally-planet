@@ -8,4 +8,10 @@ public class SceneLoader : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(name);
     }
+
+    public void CloseGame()
+    {
+        Application.Quit();
+    }
+
 }

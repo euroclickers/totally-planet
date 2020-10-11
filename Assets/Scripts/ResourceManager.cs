@@ -44,28 +44,27 @@ public class ResourceManager : MonoBehaviour
     {
 
         var newTemperature = temperature + water * (-0.1) + population * 0.1;
+        Debug.Log($"New temperature {newTemperature} (T:{temperature}, W:{water * (-0.1)}, P:{population * 0.1} )");
 
-        var newWater = temperature * (-0.1) + water + nature * (0.1) + population * (-0.1);
+        var newWater = (GaussDistribution(temperature, 25, 50, 15) - 15) + water + nature * (0.1) + population * (-0.1);
+        Debug.Log($"New water {newWater} (T:{(GaussDistribution(temperature, 25, 50, 15) - 15)}, W:{water}, N:{nature * (0.1)}, P:{population * (-0.1)}");
 
-        var newNature = (GaussDistribution(temperature, 25, 50, 15) - 15) + water * (0.1) + nature + population * (-0.1);
+        var newNature = (GaussDistribution(temperature, 25, 50, 15) - 15) + water * (0.1) + nature + population * (-0.2);
+        Debug.Log($"New nature {newNature} (T:{(GaussDistribution(temperature, 25, 50, 15) - 15)}, W:{ water * (0.1)}, N:{nature}, P:{population * (-0.2)}");
 
         var newPopulation = (GaussDistribution(temperature, 25, 50, 15) - 15) + (GaussDistribution(water, 25, 50, 20) - 15) + nature * (0.1) + population;
-        Debug.Log("Gauss Distribution result for population modification by temperature" + (GaussDistribution(temperature, 25, 50, 15) - 15));
-        Debug.Log("Gauss Distribution result for population modification by water" + (GaussDistribution(water, 25, 50, 20) - 15));
+            Debug.Log($"New population {newPopulation} (T:{(GaussDistribution(temperature, 25, 50, 15) - 15)}, W:{ (GaussDistribution(water, 25, 50, 20) - 15)}, N:{nature * 0.1}, P:{population}");
 
-        Debug.Log("Temperature variation: " + (newTemperature - temperature));
-        Debug.Log("Water variation: " + (newWater - water));
-        Debug.Log("Nature variation: " + (newNature - nature));
-        Debug.Log("Population variation: " + (newPopulation - population));
 
-        temperature = newTemperature;
-        water = newWater;
-        nature = newNature;
-        population = newPopulation;
+        SetTemperature(newTemperature);
+        SetWater(newWater);
+        SetNature(newNature);
+        SetPopulation(newPopulation);
         UpdateCanvas();
     }
 
-    private double GaussDistribution(double x, double a, double b, double c)  // f(x) = a * e^(-(b-100)^2/(2 * c^2)) where "a" controls the height, "b" controls the center and "c" the width 
+    // f(x) = a * e^(-(x-b)^2/(2 * c^2)) where "a" controls the height, "b" controls the center and "c" the width 
+    private double GaussDistribution(double x, double a, double b, double c)
     {
         var v1 = (x - b);
         var v2 = (v1 * v1) / (2 * (c * c));

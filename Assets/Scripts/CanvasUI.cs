@@ -28,7 +28,11 @@ public class CanvasUI : MonoBehaviour
         transform.Find("populationLabel").GetComponent<Text>().text = "Population: " + (int) population;
         transform.Find("temperatureLabel").GetComponent<Text>().text = "Temperature: " + (int) temperature;
         transform.Find("natureLabel").GetComponent<Text>().text = "Nature: " + (int) nature;
+    }
 
+    public void UpdateRemainingCardsLabel (int remainingCards)
+    {
+        transform.Find("DeckRemainingCardsLabel").GetComponent<Text>().text = remainingCards.ToString();
     }
 
     public void UpdateSeedLabel(int seed)

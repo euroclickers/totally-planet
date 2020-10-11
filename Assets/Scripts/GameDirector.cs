@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Resources;
 using UnityEngine;
 
@@ -32,9 +33,20 @@ public class GameDirector : MonoBehaviour
 
     public void NextTurn()
     {
+        Debug.Log("----New turn----");
         destoryCards();
         resourceManager.ResourceUpdate();
+        checkEndGame();
         generate3Cards();
+    }
+
+    private void checkEndGame()
+    {
+        if(resourceManager.population <= 0)
+        {
+            Debug.Log("LOSEEER");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+        }
     }
 
     private void destoryCards()
@@ -54,8 +66,11 @@ public class GameDirector : MonoBehaviour
             createdCards.Add(Instantiate(card, new Vector3(0, 0, 0), Quaternion.identity).cloneProperties(deck.GetNextCard()));
             createdCards.Add(Instantiate(card, new Vector3(4, 0, 0), Quaternion.identity).cloneProperties(deck.GetNextCard()));
             createdCards.Add(Instantiate(card, new Vector3(-4, 0, 0), Quaternion.identity).cloneProperties(deck.GetNextCard()));
+            canvas.UpdateRemainingCardsLabel(deck.Count);
         }catch(System.InvalidOperationException e)
         {
+            Debug.Log(e.Message);
+            Debug.Log("WINNER");
             UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
         }
     }

@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using SimpleJSON;
+using System.Globalization;
 
 public class Deck : MonoBehaviour
 {
@@ -10,8 +12,9 @@ public class Deck : MonoBehaviour
     public Deck(int seed)
     {
         Debug.Log("Start Deck");
-        Debug.Log("Start Deck");
+        
         cards = loadCards();
+
         var rnd = new System.Random(seed);
         cards = new Stack<Card>(cards.OrderBy(a => rnd.Next()));
     }
@@ -32,109 +35,65 @@ public class Deck : MonoBehaviour
         return cards.Pop();
     }
 
+    public int Count {
+        get  {
+            if (cards != null && cards.Any())
+                return cards.Count;
+            return 0;
+        }
+    }
+
     private Stack<Card> loadCards()
     {
-        var cards = new Stack<Card>();
+        Stack<Card> result = null;
 
-        //TODO load from json
-        cards.Push(new Card()
-        {
-            title = "Carta 1",
-            effects = new List<Effect>() {
-                new Effect()
-                {
-                    effectType = EffectType.POPULATION,
-                    modifier = 0.8
-                },
-                new Effect()
-                {
-                    effectType = EffectType.NATURE,
-                    modifier = 1.2
-                }
-            }
-        });
-        cards.Push(new Card()
-        {
-            title = "Carta 2",
-            effects = new List<Effect>() {
-                new Effect()
-                {
-                    effectType = EffectType.WATER,
-                    modifier = 0.7
-                },
-                new Effect()
-                {
-                    effectType = EffectType.TEMPERATURE,
-                    modifier = 1.5
-                }
-            }
-        });
-        cards.Push(new Card()
-        {
-            title = "Carta 3",
-            effects = new List<Effect>() {
-                new Effect()
-                {
-                    effectType = EffectType.WATER,
-                    modifier = 1.5
-                },
-                new Effect()
-                {
-                    effectType = EffectType.POPULATION,
-                    modifier = 0.7
-                }
-            }
-        });
-        cards.Push(new Card()
-        {
-            title = "Carta 4",
-            effects = new List<Effect>() {
-                new Effect()
-                {
-                    effectType = EffectType.POPULATION,
-                    modifier = 1.3
-                },
-                new Effect()
-                {
-                    effectType = EffectType.NATURE,
-                    modifier = 0.8
-                }
-            }
-        });
+        TextAsset cardsAsset = null;
+        Deck cardList = null;
+
         
-        cards.Push(new Card()
-        {
-            title = "Carta 4",
-            effects = new List<Effect>() {
-                new Effect()
-                {
-                    effectType = EffectType.POPULATION,
-                    modifier = 1.3
-                },
-                new Effect()
-                {
-                    effectType = EffectType.WATER,
-                    modifier = 0.8
-                },
-                new Effect()
-                {
-                    effectType = EffectType.NATURE,
-                    modifier = 0.8
-                }
-            }
-        });
-        cards.Push(new Card()
-        {
-            title = "Carta 5",
-            effects = new List<Effect>() {
-                new Effect()
-                {
-                    effectType = EffectType.TEMPERATURE,
-                    modifier = 1.3
-                }
-            }
-        });
+        try {
+            
+            Debug.Log("Cards loading from json init");
 
-        return cards;
+            result = new Stack<Card>();
+
+            cardsAsset = Resources.Load<TextAsset>("Config/cards");
+            Debug.Log("json: " + cardsAsset.ToString());
+
+            var jsonData = JSON.Parse(cardsAsset.ToString());
+
+            foreach(var cardData in jsonData["cards"].AsArray)
+            {
+                var efffects = new List<Effect>();
+                foreach (var effectData in cardData.Value["effects"])
+                {
+                    var effect = new Effect();
+                    effect.effectType = (EffectType) effectData.Value["effectType"].AsInt;
+                    effect.modifier = effectData.Value["modifier"].AsDouble;
+                    efffects.Add(effect);
+                }
+                var card = new Card();
+                card.title = cardData.Value["title"];
+                card.effects = efffects;
+                for(var i = 0; i < cardData.Value["quantity"].AsInt;i++)
+                {
+                    result.Push(card);
+                }
+                
+            }
+
+            Debug.Log(string.Format($"Finished: {result.Count} cards loaded"));
+            Debug.Log("Cards loading from json ended");
+
+        } 
+        catch (Exception ex) {
+            Debug.LogError($"Error loading cards: {ex.Message}");
+        }
+        finally {
+            cardsAsset = null;
+            cardList = null;
+        }
+
+        return result;
     }
 }

@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class Card : MonoBehaviour
 {
+    
     public string title;
     public List<Effect> effects;
     public EffectUI effectUI;
+
     // Start is called before the first frame update
     void Start()
     {
