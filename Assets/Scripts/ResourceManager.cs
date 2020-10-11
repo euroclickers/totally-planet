@@ -43,17 +43,17 @@ public class ResourceManager : MonoBehaviour
     public void ResourceUpdate()
     {
 
-        var newTemperature = temperature + water * (-0.1) + population * 0.1;
-        Debug.Log($"New temperature {newTemperature} (T:{temperature}, W:{water * (-0.1)}, P:{population * 0.1} )");
+        var newTemperature = temperature + water * (-0.1) + population * 0.2;
+        Debug.Log($"New temperature {newTemperature} (T:{temperature}, W:{water * (-0.1)}, P:{population * 0.2} )");
 
-        var newWater = (GaussDistribution(temperature, 25, 50, 15) - 15) + water + nature * (0.1) + population * (-0.1);
-        Debug.Log($"New water {newWater} (T:{(GaussDistribution(temperature, 25, 50, 15) - 15)}, W:{water}, N:{nature * (0.1)}, P:{population * (-0.1)}");
+        var newWater = (GaussDistribution(temperature, 25, 50, 15) - 15) + water + nature * (0.1) + population * (-0.2);
+        Debug.Log($"New water {newWater} (T:{(GaussDistribution(temperature, 25, 50, 15) - 15)}, W:{water}, N:{nature * (0.1)}, P:{population * (-0.2)}");
 
-        var newNature = (GaussDistribution(temperature, 25, 50, 15) - 15) + water * (0.1) + nature + population * (-0.2);
-        Debug.Log($"New nature {newNature} (T:{(GaussDistribution(temperature, 25, 50, 15) - 15)}, W:{ water * (0.1)}, N:{nature}, P:{population * (-0.2)}");
+        var newNature = (GaussDistribution(temperature, 25, 50, 15) - 15) + (GaussDistribution(water, 45, 100, 60) - 30) + nature + population * (-0.2);
+        Debug.Log($"New nature {newNature} (T:{(GaussDistribution(temperature, 25, 50, 15) - 15)}, W:{ (GaussDistribution(water, 45, 100, 60) - 30)}, N:{nature}, P:{population * (-0.2)}");
 
-        var newPopulation = (GaussDistribution(temperature, 25, 50, 15) - 15) + (GaussDistribution(water, 25, 50, 20) - 15) + nature * (0.1) + population;
-            Debug.Log($"New population {newPopulation} (T:{(GaussDistribution(temperature, 25, 50, 15) - 15)}, W:{ (GaussDistribution(water, 25, 50, 20) - 15)}, N:{nature * 0.1}, P:{population}");
+        var newPopulation = (GaussDistribution(temperature, 45, 50, 15) - 25) + (GaussDistribution(water, 25, 50, 20) - 15) + (GaussDistribution(nature, 60, 100, 80) - 50) + population;
+            Debug.Log($"New population {newPopulation} (T:{(GaussDistribution(temperature, 45, 50, 15) - 25)}, W:{ (GaussDistribution(water, 25, 50, 20) - 15)}, N:{(GaussDistribution(nature, 60, 100, 80) - 50)}, P:{population}");
 
 
         SetTemperature(newTemperature);

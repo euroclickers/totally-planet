@@ -33,10 +33,10 @@ public class GameDirector : MonoBehaviour
 
     public void NextTurn()
     {
-        Debug.Log("----New turn----");
         destoryCards();
         resourceManager.ResourceUpdate();
         checkEndGame();
+        Debug.Log("----New turn----" + deck.Count);
         generate3Cards();
     }
 
