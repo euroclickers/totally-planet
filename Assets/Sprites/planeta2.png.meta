@@ -1,0 +1,1820 @@
+fileFormatVersion: 2
+guid: 872ce30bbe3a8424793f21aef26d4ab4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7453938549001303098
+    second: planeta2_0
+  - first:
+      213: -81908188855516035
+    second: planeta2_1
+  - first:
+      213: 284393369983719960
+    second: planeta2_2
+  - first:
+      213: -164490344290772824
+    second: planeta2_3
+  - first:
+      213: -3124366347947997688
+    second: planeta2_4
+  - first:
+      213: -5219790010249975342
+    second: planeta2_5
+  - first:
+      213: 4868928086503784140
+    second: planeta2_6
+  - first:
+      213: -1527681245965031785
+    second: planeta2_7
+  - first:
+      213: 2729252885391041914
+    second: planeta2_8
+  - first:
+      213: 2795521239975788330
+    second: planeta2_9
+  - first:
+      213: -2344855378435827910
+    second: planeta2_10
+  - first:
+      213: -2768677244750208178
+    second: planeta2_11
+  - first:
+      213: -5485844591405127323
+    second: planeta2_12
+  - first:
+      213: 7264503752583279070
+    second: planeta2_13
+  - first:
+      213: -623983888700102408
+    second: planeta2_14
+  - first:
+      213: 2881902110243725727
+    second: planeta2_15
+  - first:
+      213: -7668680494150377726
+    second: planeta2_16
+  - first:
+      213: 7286439292824099840
+    second: planeta2_17
+  - first:
+      213: -4952896081332627024
+    second: planeta2_18
+  - first:
+      213: 8705202772219339255
+    second: planeta2_19
+  - first:
+      213: -4318397434787769850
+    second: planeta2_20
+  - first:
+      213: -3143229603308587883
+    second: planeta2_21
+  - first:
+      213: 2098146450239548026
+    second: planeta2_22
+  - first:
+      213: -9053590296742493159
+    second: planeta2_23
+  - first:
+      213: 1547120695058372417
+    second: planeta2_24
+  - first:
+      213: -4634884994254236686
+    second: planeta2_25
+  - first:
+      213: -4697053647024110929
+    second: planeta2_26
+  - first:
+      213: -2930671961168283772
+    second: planeta2_27
+  - first:
+      213: -1781221335947025337
+    second: planeta2_28
+  - first:
+      213: 3163525612723562185
+    second: planeta2_29
+  - first:
+      213: -3662876913801348656
+    second: planeta2_30
+  - first:
+      213: -4430630768596751361
+    second: planeta2_31
+  - first:
+      213: 2398045504444091026
+    second: planeta2_32
+  - first:
+      213: -3184573885996675575
+    second: planeta2_33
+  - first:
+      213: 4208553792366017216
+    second: planeta2_34
+  - first:
+      213: -9037915937415971433
+    second: planeta2_35
+  - first:
+      213: 8893656899949920827
+    second: planeta2_36
+  - first:
+      213: 7494380362507199951
+    second: planeta2_37
+  - first:
+      213: 6952045358827148884
+    second: planeta2_38
+  - first:
+      213: -3035053099494812740
+    second: planeta2_39
+  - first:
+      213: -3619823554563520010
+    second: planeta2_40
+  - first:
+      213: -783428857211264767
+    second: planeta2_41
+  - first:
+      213: 2726180697578529255
+    second: planeta2_42
+  - first:
+      213: -2033599851985210725
+    second: planeta2_43
+  - first:
+      213: 7192715088495277226
+    second: planeta2_44
+  - first:
+      213: 5006062246676069786
+    second: planeta2_45
+  - first:
+      213: 6905028003545461662
+    second: planeta2_46
+  - first:
+      213: -6962909242807507603
+    second: planeta2_47
+  - first:
+      213: 2469368103440772789
+    second: planeta2_48
+  - first:
+      213: 219277013119984054
+    second: planeta2_49
+  - first:
+      213: -5399565332217711887
+    second: planeta2_50
+  - first:
+      213: 4889147197189422372
+    second: planeta2_51
+  - first:
+      213: 1622851604243920914
+    second: planeta2_52
+  - first:
+      213: 5841082789295631899
+    second: planeta2_53
+  - first:
+      213: -9067364378668181372
+    second: planeta2_54
+  - first:
+      213: -8909647889722417530
+    second: planeta2_55
+  - first:
+      213: -4994897457452531563
+    second: planeta2_56
+  - first:
+      213: -5834734244401077975
+    second: planeta2_57
+  - first:
+      213: 5183132457192513224
+    second: planeta2_58
+  - first:
+      213: 1758479511695028480
+    second: planeta2_59
+  - first:
+      213: 3177365020240147393
+    second: planeta2_60
+  - first:
+      213: -6100001188365043826
+    second: planeta2_61
+  - first:
+      213: -5101267186283679876
+    second: planeta2_62
+  - first:
+      213: 6861388348176068800
+    second: planeta2_63
+  - first:
+      213: 6232392355721218696
+    second: planeta2_64
+  - first:
+      213: 4283510826213104817
+    second: planeta2_65
+  - first:
+      213: 6437290685107530146
+    second: planeta2_66
+  - first:
+      213: -3711300196935131682
+    second: planeta2_67
+  - first:
+      213: -3448509365886600977
+    second: planeta2_68
+  - first:
+      213: 8452422815442508485
+    second: planeta2_69
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: planeta2_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1408
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbcf21e16a4e8890800000000000000
+      internalID: -7453938549001303098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_1
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1408
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74421bafe00ddef0800000000000000
+      internalID: -81908188855516035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_2
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1408
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a1b52634e52f300800000000000000
+      internalID: 284393369983719960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_3
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1408
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8119347ec97bdf0800000000000000
+      internalID: -164490344290772824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_4
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1408
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80600623c5504a4d0800000000000000
+      internalID: -3124366347947997688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_5
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9eaec24a49f87b0800000000000000
+      internalID: -5219790010249975342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_6
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccefaf84c48e19340800000000000000
+      internalID: 4868928086503784140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_7
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7966a3430069ccae0800000000000000
+      internalID: -1527681245965031785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_8
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7561fff90140e520800000000000000
+      internalID: 2729252885391041914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_9
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1300
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ff0d6a1cfabc620800000000000000
+      internalID: 2795521239975788330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_10
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1192
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a371ba6f476657fd0800000000000000
+      internalID: -2344855378435827910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_11
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1192
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43e4f807bea399d0800000000000000
+      internalID: -2768677244750208178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_12
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1192
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569ac4cc86d5ed3b0800000000000000
+      internalID: -5485844591405127323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_13
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1192
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1f73a8ca3b0d460800000000000000
+      internalID: 7264503752583279070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_14
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1192
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8a67095f92757f0800000000000000
+      internalID: -623983888700102408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_15
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1084
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91a68643b29ef720800000000000000
+      internalID: 2881902110243725727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_16
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 1084
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f133298bf539590800000000000000
+      internalID: -7668680494150377726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_17
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1084
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c9a3e7ee1ae1560800000000000000
+      internalID: 7286439292824099840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_18
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1084
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b99ebe6147c34bb0800000000000000
+      internalID: -4952896081332627024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_19
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1084
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f121e79cc71fc870800000000000000
+      internalID: 8705202772219339255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_20
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 976
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6025484b968f114c0800000000000000
+      internalID: -4318397434787769850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_21
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 976
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594bc4f44510164d0800000000000000
+      internalID: -3143229603308587883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_22
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 976
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a664d741d1e1d10800000000000000
+      internalID: 2098146450239548026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_23
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 976
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9148db4d79f2b5280800000000000000
+      internalID: -9053590296742493159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_24
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 976
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1471c9d331a787510800000000000000
+      internalID: 1547120695058372417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_25
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 868
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f310b687a49dafb0800000000000000
+      internalID: -4634884994254236686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_26
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 868
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2cc261896b0deb0800000000000000
+      internalID: -4697053647024110929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_27
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 868
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487fd51f0692457d0800000000000000
+      internalID: -2930671961168283772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_28
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 868
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744e78cd1a4d747e0800000000000000
+      internalID: -1781221335947025337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_29
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 868
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6ec30a8c917eb20800000000000000
+      internalID: 3163525612723562185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_30
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d934e88ad8da2dc0800000000000000
+      internalID: -3662876913801348656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_31
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbefda5acc3382c0800000000000000
+      internalID: -4430630768596751361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_32
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29acc9f4ea1974120800000000000000
+      internalID: 2398045504444091026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_33
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ece2c5cee1ec3d0800000000000000
+      internalID: -3184573885996675575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_34
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 760
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca79145069c76a30800000000000000
+      internalID: 4208553792366017216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_35
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 652
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79dba70075fd29280800000000000000
+      internalID: -9037915937415971433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_36
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 652
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3287b374dd9c6b70800000000000000
+      internalID: 8893656899949920827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_37
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 652
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5a7e69b33610860800000000000000
+      internalID: 7494380362507199951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_38
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 652
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4569b4b9b60aa7060800000000000000
+      internalID: 6952045358827148884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_39
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 652
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3d922594351e5d0800000000000000
+      internalID: -3035053099494812740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_40
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 544
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f946a0e7adc3cdc0800000000000000
+      internalID: -3619823554563520010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_41
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 544
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101e12bea93b025f0800000000000000
+      internalID: -783428857211264767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_42
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 544
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1e1b886e655d520800000000000000
+      internalID: 2726180697578529255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_43
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 544
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92722785b337c3e0800000000000000
+      internalID: -2033599851985210725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_44
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 544
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa47a5ca348a1d360800000000000000
+      internalID: 7192715088495277226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_45
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 436
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9dfe90171b197540800000000000000
+      internalID: 5006062246676069786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_46
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 436
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93b373826693df50800000000000000
+      internalID: 6905028003545461662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_47
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 436
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65ac2b4fe6ce5f90800000000000000
+      internalID: -6962909242807507603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_48
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 436
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be6441f435f44220800000000000000
+      internalID: 2469368103440772789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_49
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 436
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1ec6a18470b0300800000000000000
+      internalID: 219277013119984054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_50
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 328
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f236af30f3e015b0800000000000000
+      internalID: -5399565332217711887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_51
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 328
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d7217d87db9d340800000000000000
+      internalID: 4889147197189422372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_52
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 328
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218b1229fe6858610800000000000000
+      internalID: 1622851604243920914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_53
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 328
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e2d9779d1bf0150800000000000000
+      internalID: 5841082789295631899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_54
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 328
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488d37873204a2280800000000000000
+      internalID: -9067364378668181372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_55
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e594b13729a5480800000000000000
+      internalID: -8909647889722417530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_56
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5904a0ff93f8eaab0800000000000000
+      internalID: -4994897457452531563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_57
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921aaa35e1cd60fa0800000000000000
+      internalID: -5834734244401077975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_58
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ced1c6228f2ee740800000000000000
+      internalID: 5183132457192513224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_59
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 220
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001726f8ccf576810800000000000000
+      internalID: 1758479511695028480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_60
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 112
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c37a29c6a4481c20800000000000000
+      internalID: 3177365020240147393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_61
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 112
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e877a060d31785ba0800000000000000
+      internalID: -6100001188365043826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_62
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 112
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f64319588a439b0800000000000000
+      internalID: -5101267186283679876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_63
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 112
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0f907795c883f50800000000000000
+      internalID: 6861388348176068800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_64
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 112
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a8f9fa3d7ed7650800000000000000
+      internalID: 6232392355721218696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_65
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 4
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bcd8f3c666127b30800000000000000
+      internalID: 4283510826213104817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_66
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 4
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9e3c995c9d55950800000000000000
+      internalID: 6437290685107530146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_67
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 4
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd18da5220de7cc0800000000000000
+      internalID: -3711300196935131682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_68
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 4
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8b8b1b00f6420d0800000000000000
+      internalID: -3448509365886600977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planeta2_69
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 4
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca9bdd84c90d4570800000000000000
+      internalID: 8452422815442508485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

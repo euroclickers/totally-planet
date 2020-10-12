@@ -72,6 +72,17 @@ public class Card : MonoBehaviour
         gameDirector.NextTurn();
     }
 
+ 
+    private void OnMouseEnter()
+    {
+        transform.localScale = new Vector3(0.55f, 0.55f, 1);
+    }
+
+    private void OnMouseExit()
+    {
+        transform.localScale = new Vector3(0.5f, 0.5f, 1);
+    }
+
     public Card cloneProperties(Card card)
     {
         effects = card.effects;

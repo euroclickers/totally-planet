@@ -72,9 +72,9 @@ public class GameDirector : MonoBehaviour
     {
         try
         {
-            createdCards.Add(Instantiate(card, new Vector3(0, 0, 0), Quaternion.identity).cloneProperties(deck.GetNextCard()));
-            createdCards.Add(Instantiate(card, new Vector3(4, 0, 0), Quaternion.identity).cloneProperties(deck.GetNextCard()));
-            createdCards.Add(Instantiate(card, new Vector3(-4, 0, 0), Quaternion.identity).cloneProperties(deck.GetNextCard()));
+            createdCards.Add(Instantiate(card, new Vector3(0, -2, 0), Quaternion.identity).cloneProperties(deck.GetNextCard()));
+            createdCards.Add(Instantiate(card, new Vector3(4, -2, 0), Quaternion.identity).cloneProperties(deck.GetNextCard()));
+            createdCards.Add(Instantiate(card, new Vector3(-4, -2, 0), Quaternion.identity).cloneProperties(deck.GetNextCard()));
             canvas.UpdateRemainingCardsLabel(deck.Count);
         }catch(System.InvalidOperationException e)
         {
