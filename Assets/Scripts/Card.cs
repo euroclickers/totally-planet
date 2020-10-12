@@ -10,6 +10,8 @@ public class Card : MonoBehaviour
     public List<Effect> effects;
     public EffectUI effectUI;
     private bool selected = false;
+    private float normalScale = 8f;
+    private float maxScale = 8.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -30,8 +32,8 @@ public class Card : MonoBehaviour
             effectUI = Instantiate(effectUI, new Vector3(0, 0, -5f), Quaternion.identity);
             effectUI.effect = effect;
             effectUI.transform.parent = transform;
-            effectUI.transform.localScale = new Vector3(2.5f, 2.5f, 1);
-            effectUI.transform.position = new Vector3(transform.position.x + positionModification, transform.position.y + 1.2f, -5f);
+            effectUI.transform.localScale = new Vector3(1f, 1f, 1);
+            effectUI.transform.position = new Vector3(transform.position.x + positionModification, transform.position.y, -5f);
             i++;
         }
        
@@ -39,20 +41,22 @@ public class Card : MonoBehaviour
 
     private float getPositionMoficiation(int count, int index)
     {
+        
         if(count == 1)
         {
             return 0.5f;
         }else if(count == 2)
         {
-            return (index == 0) ? -0.5f : 1.5f;
+            return (index == 0) ? -1f : 1f;
         }else if(count == 3)
         {
             if(index == 0)
             {
-                return 0.5f;
+                return 0f;
             }
-            return (index == 1) ? -0.5f : 1.5f;
+            return (index == 1) ? -1f : 1f;
         }
+        
 
         return 0f;
     }
@@ -68,25 +72,32 @@ public class Card : MonoBehaviour
         if (!selected)
         {
             selected = true;
-            transform.localScale = new Vector3(0.55f, 0.55f, 1);
+            transform.localScale = new Vector3(maxScale, maxScale, 1);
             foreach (var effect in effects)
             {
                 effect.apply();
             }
-            GameObject.Find("Parent").BroadcastMessage("OnCardSelected", this, SendMessageOptions.DontRequireReceiver);
+            if (effects.Count == 0)
+            {
+                GameObject.Find("Parent").BroadcastMessage("OnCardSelectFinished", SendMessageOptions.DontRequireReceiver);
+            }
+            else
+            {
+                GameObject.Find("Parent").BroadcastMessage("OnCardSelected", this, SendMessageOptions.DontRequireReceiver);
+            }
         }
     }
  
     private void OnMouseEnter()
     {
-        transform.localScale = new Vector3(0.55f, 0.55f, 1);
+        transform.localScale = new Vector3(maxScale, maxScale, 1);
     }
 
     private void OnMouseExit()
     {
         if (!selected)
         {
-            transform.localScale = new Vector3(0.5f, 0.5f, 1);
+            transform.localScale = new Vector3(normalScale, normalScale, 1);
         }
     }
 
@@ -111,7 +122,7 @@ public class Card : MonoBehaviour
 
         if(allAreApplied)
         {
-            GameObject.Find("Parent").BroadcastMessage("OnCardSelectedFinished", SendMessageOptions.DontRequireReceiver);
+            GameObject.Find("Parent").BroadcastMessage("OnCardSelectFinished", SendMessageOptions.DontRequireReceiver);
         }
     }
 }

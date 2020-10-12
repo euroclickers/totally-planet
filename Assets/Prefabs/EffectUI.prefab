@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713219819416597709}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3771685, y: -1.532307, z: 2.3720703}
-  m_LocalScale: {x: 0.14999999, y: 0.14999999, z: 0.29999998}
+  m_LocalPosition: {x: 0, y: -0.2, z: 2.3720703}
+  m_LocalScale: {x: 0.38, y: 0.38, z: 0.29999998}
   m_Children: []
   m_Father: {fileID: 4429829345070054662}
   m_RootOrder: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_Size: {x: 5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2042133625334100452
@@ -106,8 +106,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2042133625334100452}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.20716852, y: -1.232307, z: 2.2720704}
-  m_LocalScale: {x: 0.065, y: 0.065, z: 1}
+  m_LocalPosition: {x: 0.021, y: -0.18, z: 2.2720704}
+  m_LocalScale: {x: 0.22, y: 0.22, z: 1}
   m_Children: []
   m_Father: {fileID: 4429829345070054662}
   m_RootOrder: 1
@@ -159,7 +159,7 @@ SpriteRenderer:
   m_Size: {x: 5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2294327625879286197
@@ -188,7 +188,7 @@ Transform:
   m_GameObject: {fileID: 2294327625879286197}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.47, y: 0, z: -20}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children:
   - {fileID: 3793567114569074414}
   - {fileID: 490166145413624740}
@@ -208,9 +208,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: {fileID: 0}
-  populationSprite: {fileID: 21300000, guid: 93249089dd0b157468771f8efffd72d0, type: 3}
-  waterSprite: {fileID: 21300000, guid: 86c2f4cb777ec5c4fb9d0e4b12139658, type: 3}
-  natureSprite: {fileID: 21300000, guid: 4cae8e8cd74c46f4ebe20814136d5df3, type: 3}
-  temperatureSprite: {fileID: 21300000, guid: 97c15a6a371bce44b9d1554c4f31f5dd, type: 3}
-  modfierUp: {fileID: 21300000, guid: 35fcc96091da8c74c996c251e45089e6, type: 3}
-  modifierDown: {fileID: 21300000, guid: 556b34320b3539b41bc6cdd7d0141b57, type: 3}
+  populationSprite: {fileID: 21300000, guid: a36205950d28dd845942e01f6720739b, type: 3}
+  waterSprite: {fileID: 21300000, guid: d3cdcc1ee127e4445aa5c0a8b7be1258, type: 3}
+  natureSprite: {fileID: 21300000, guid: c997194024ae7084894bd77a63865b39, type: 3}
+  temperatureSprite: {fileID: 21300000, guid: a1af7c689c76a124d89a357fa0de52a2, type: 3}
+  modfierUp: {fileID: 21300000, guid: ebc77572bf779cf438b8a67a09f10653, type: 3}
+  modifierDown: {fileID: 21300000, guid: 6535fdfad9e0a6140be56149a03397cc, type: 3}
