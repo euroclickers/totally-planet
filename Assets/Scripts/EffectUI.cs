@@ -14,7 +14,7 @@ public class EffectUI : MonoBehaviour
     public Sprite modfierUp;
     public Sprite modifierDown;
 
-    private float speed = 3f;
+    private float speed = 1f;
     
     // Start is called before the first frame update
     void Start()
@@ -60,7 +60,7 @@ public class EffectUI : MonoBehaviour
         {
             var resource = GameObject.Find("Canvas").transform.Find("resources").Find(effect.effectType.ToString().ToLower()).Find("fill");
 
-            var destination = new Vector2(resource.transform.position.x + .5f, resource.transform.position.y + 2);
+            var destination = new Vector2(resource.transform.position.x, resource.transform.position.y + 1.5f);
            
             if ((transform.position.x <= destination.x + 0.1f && transform.position.x >= destination.x - 0.1f) &&
                 (transform.position.y <= destination.y + 0.1f && transform.position.y >= destination.y - 0.1f))

@@ -28,7 +28,7 @@ public class CardSelection : MonoBehaviour
         var cardSelection = GameObject.Find("CardSelection");
         try
         {
-            var card1 = Instantiate(card, new Vector3(-4, -2, 0), Quaternion.identity).cloneProperties(deck.GetNextCard());
+            var card1 = Instantiate(card, new Vector3(-5, -2, 0), Quaternion.identity).cloneProperties(deck.GetNextCard());
             card1.transform.parent = cardSelection.transform;
             card1.transform.name = "Card1";
             createdCards.Add(card1);
@@ -38,7 +38,7 @@ public class CardSelection : MonoBehaviour
             createdCards.Add(card2);
             card2.transform.name = "Card2";
 
-            var card3 = Instantiate(card, new Vector3(4, -2, 0), Quaternion.identity).cloneProperties(deck.GetNextCard());
+            var card3 = Instantiate(card, new Vector3(5, -2, 0), Quaternion.identity).cloneProperties(deck.GetNextCard());
             card3.transform.parent = cardSelection.transform;
             createdCards.Add(card3);
             card3.transform.name = "Card3";
@@ -65,7 +65,7 @@ public class CardSelection : MonoBehaviour
         createdCards.Add(card);
     }
 
-    public void OnCardSelectedFinished()
+    public void OnCardSelectFinished()
     {
         foreach (var createdCard in createdCards)
         {
