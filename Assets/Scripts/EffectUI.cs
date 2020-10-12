@@ -13,6 +13,8 @@ public class EffectUI : MonoBehaviour
 
     public Sprite modfierUp;
     public Sprite modifierDown;
+
+    private float speed = 3f;
     
     // Start is called before the first frame update
     void Start()
@@ -54,6 +56,26 @@ public class EffectUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(effect.applying == true)
+        {
+            var resource = GameObject.Find("Canvas").transform.Find("resources").Find(effect.effectType.ToString().ToLower()).Find("fill");
+
+            var destination = new Vector2(resource.transform.position.x + .5f, resource.transform.position.y + 2);
+           
+            if ((transform.position.x <= destination.x + 0.1f && transform.position.x >= destination.x - 0.1f) &&
+                (transform.position.y <= destination.y + 0.1f && transform.position.y >= destination.y - 0.1f))
+            {
+                Debug.Log("Finish effect");
+                Destroy(this.gameObject);
+                effect.finishApplying();
+                
+                
+            }else
+            {
+                var currentSpeed = speed + (3000 * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, destination, currentSpeed * Time.deltaTime);
+            }
+
+        }
     }
 }

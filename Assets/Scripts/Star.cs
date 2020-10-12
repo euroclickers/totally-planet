@@ -46,7 +46,7 @@ public class Star : MonoBehaviour
 
     public void OnBecameInvisible()
     {
-        transform.parent.BroadcastMessage("OnStarDestroyed", SendMessageOptions.DontRequireReceiver);
+        GameObject.Find("Parent").BroadcastMessage("OnStarDestroyed", SendMessageOptions.DontRequireReceiver);
         Destroy(gameObject);
     }
 

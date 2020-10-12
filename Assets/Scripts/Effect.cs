@@ -7,10 +7,16 @@ public class Effect : MonoBehaviour
 {
     public EffectType effectType;
     public double modifier;
+    public bool applying = false;
 
     public void apply()
     {
+        applying = true;
+    }
 
+    public void finishApplying()
+    {
+        applying = false;
         var resourceManager = GameObject.Find("ResourceManager").GetComponent<ResourceManager>();
 
         switch (effectType)
@@ -33,5 +39,7 @@ public class Effect : MonoBehaviour
                 break;
 
         }
+
+        GameObject.Find("Parent").BroadcastMessage("OnEffectFinishedApplying", SendMessageOptions.DontRequireReceiver);
     }
 }

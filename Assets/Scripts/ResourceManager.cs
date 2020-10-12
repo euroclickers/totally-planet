@@ -72,6 +72,7 @@ public class ResourceManager : MonoBehaviour
         SetNature(newNature);
         SetPopulation(newPopulation);
         UpdateDependentInfo();
+        GameObject.Find("Parent").BroadcastMessage("OnResourceManagerResourceUpdateFinished", SendMessageOptions.DontRequireReceiver);
     }
 
     // f(x) = a * e^(-(x-b)^2/(2 * c^2)) where "a" controls the height, "b" controls the center and "c" the width, baseLine controls the position across y axis
