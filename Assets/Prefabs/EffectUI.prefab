@@ -187,7 +187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2294327625879286197}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.07283148, y: 0.732307, z: -2.8720703}
+  m_LocalPosition: {x: -6.47, y: 0, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3793567114569074414}
@@ -211,6 +211,6 @@ MonoBehaviour:
   populationSprite: {fileID: 21300000, guid: 93249089dd0b157468771f8efffd72d0, type: 3}
   waterSprite: {fileID: 21300000, guid: 86c2f4cb777ec5c4fb9d0e4b12139658, type: 3}
   natureSprite: {fileID: 21300000, guid: 4cae8e8cd74c46f4ebe20814136d5df3, type: 3}
-  temperatureSprite: {fileID: 21300000, guid: 06050ad8889ffbe43a14893df235215e, type: 3}
+  temperatureSprite: {fileID: 21300000, guid: 97c15a6a371bce44b9d1554c4f31f5dd, type: 3}
   modfierUp: {fileID: 21300000, guid: 35fcc96091da8c74c996c251e45089e6, type: 3}
   modifierDown: {fileID: 21300000, guid: 556b34320b3539b41bc6cdd7d0141b57, type: 3}

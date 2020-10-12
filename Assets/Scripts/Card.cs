@@ -64,7 +64,8 @@ public class Card : MonoBehaviour
 
     void OnMouseDown()
     {
-        foreach(var effect in effects)
+        transform.localScale = new Vector3(0.55f, 0.55f, 1);
+        foreach (var effect in effects)
         {
             effect.apply();
         }

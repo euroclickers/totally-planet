@@ -70,11 +70,22 @@ public class GameDirector : MonoBehaviour
 
     private void generate3Cards()
     {
+        var cardSelection = GameObject.Find("CardSelection");
         try
         {
-            createdCards.Add(Instantiate(card, new Vector3(0, -2, 0), Quaternion.identity).cloneProperties(deck.GetNextCard()));
-            createdCards.Add(Instantiate(card, new Vector3(4, -2, 0), Quaternion.identity).cloneProperties(deck.GetNextCard()));
-            createdCards.Add(Instantiate(card, new Vector3(-4, -2, 0), Quaternion.identity).cloneProperties(deck.GetNextCard()));
+            var card1 = Instantiate(card, new Vector3(-4, -2, 0), Quaternion.identity).cloneProperties(deck.GetNextCard());
+            card1.transform.parent = cardSelection.transform;
+            card1.transform.name = "Card1";
+            createdCards.Add(card1);
+            var card2 = Instantiate(card, new Vector3(0, -2, 0), Quaternion.identity).cloneProperties(deck.GetNextCard());
+            card2.transform.parent = cardSelection.transform;
+            createdCards.Add(card2);
+            card2.transform.name = "Card2";
+            var card3 = Instantiate(card, new Vector3(4, -2, 0), Quaternion.identity).cloneProperties(deck.GetNextCard());
+            card3.transform.parent = cardSelection.transform;
+            createdCards.Add(card3);
+            card3.transform.name = "Card3";
+
             canvas.UpdateRemainingCardsLabel(deck.Count);
         }catch(System.InvalidOperationException e)
         {

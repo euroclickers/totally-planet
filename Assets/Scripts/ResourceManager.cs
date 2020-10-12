@@ -108,7 +108,7 @@ public class ResourceManager : MonoBehaviour
 
     private void UpdateDependentInfo()
     {
-        canvas.UpdateResourceManagerText(water, population, temperature, nature);
+        canvas.UpdateResourceManager(water, population, temperature, nature);
         InfoBetweenScenes.water = water;
         InfoBetweenScenes.temperature = temperature;
         InfoBetweenScenes.population = population;
