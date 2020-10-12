@@ -24,10 +24,12 @@ public class CanvasUI : MonoBehaviour
         double nature
     )
     {
-        transform.Find("waterLabel").GetComponent<Text>().text = "Water: " + (int) water;
-        transform.Find("populationLabel").GetComponent<Text>().text = "Population: " + (int) population;
-        transform.Find("temperatureLabel").GetComponent<Text>().text = "Temperature: " + (int) temperature;
-        transform.Find("natureLabel").GetComponent<Text>().text = "Nature: " + (int) nature;
+        transform.Find("resources").Find("waterLabel").GetComponent<Text>().text = "Water: " + (int) water;
+        transform.Find("resources").Find("populationLabel").GetComponent<Text>().text = "Population: " + (int) population;
+        transform.Find("resources").Find("temperatureLabel").GetComponent<Text>().text = "Temperature: " + (int) temperature;
+        transform.Find("resources").Find("natureLabel").GetComponent<Text>().text = "Nature: " + (int) nature;
+
+        transform.Find("resources").Find("water").Find("fill").GetComponent<Image>().fillAmount = (float) water / 100;
     }
 
     public void UpdateRemainingCardsLabel (int remainingCards)
