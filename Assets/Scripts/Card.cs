@@ -9,6 +9,7 @@ public class Card : MonoBehaviour
     public string title;
     public List<Effect> effects;
     public EffectUI effectUI;
+    private bool selected = false;
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +27,11 @@ public class Card : MonoBehaviour
         foreach(var effect in effects)
         {
             var positionModification = getPositionMoficiation(count, i);
-            effectUI = Instantiate(effectUI, new Vector3(0, 0, -2.5f), Quaternion.identity);
+            effectUI = Instantiate(effectUI, new Vector3(0, 0, -5f), Quaternion.identity);
             effectUI.effect = effect;
             effectUI.transform.parent = transform;
             effectUI.transform.localScale = new Vector3(2.5f, 2.5f, 1);
-            effectUI.transform.position = new Vector3(transform.position.x + positionModification, transform.position.y + 1.2f, -2.5f);
+            effectUI.transform.position = new Vector3(transform.position.x + positionModification, transform.position.y + 1.2f, -5f);
             i++;
         }
        
@@ -64,14 +65,17 @@ public class Card : MonoBehaviour
 
     void OnMouseDown()
     {
-        foreach(var effect in effects)
+        if (!selected)
         {
-            effect.apply();
+            selected = true;
+            transform.localScale = new Vector3(0.55f, 0.55f, 1);
+            foreach (var effect in effects)
+            {
+                effect.apply();
+            }
+            GameObject.Find("Parent").BroadcastMessage("OnCardSelected", this, SendMessageOptions.DontRequireReceiver);
         }
-        var gameDirector = GameObject.Find("GameDirector").GetComponent<GameDirector>();
-        gameDirector.NextTurn();
     }
-
  
     private void OnMouseEnter()
     {
@@ -80,7 +84,10 @@ public class Card : MonoBehaviour
 
     private void OnMouseExit()
     {
-        transform.localScale = new Vector3(0.5f, 0.5f, 1);
+        if (!selected)
+        {
+            transform.localScale = new Vector3(0.5f, 0.5f, 1);
+        }
     }
 
     public Card cloneProperties(Card card)
@@ -89,5 +96,22 @@ public class Card : MonoBehaviour
         title = card.title;
 
         return this;
+    }
+
+    public void OnEffectFinishedApplying()
+    {
+        bool allAreApplied = true;
+        foreach(var effect in effects)
+        {
+            if(effect.applying)
+            {
+                allAreApplied = false;
+            }
+        }
+
+        if(allAreApplied)
+        {
+            GameObject.Find("Parent").BroadcastMessage("OnCardSelectedFinished", SendMessageOptions.DontRequireReceiver);
+        }
     }
 }

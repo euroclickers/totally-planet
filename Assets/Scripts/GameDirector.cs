@@ -6,25 +6,20 @@ using UnityEngine;
 public class GameDirector : MonoBehaviour
 {
 
-    public Card card;
+    
     public ResourceManager resourceManager;
     public int seed = 0;
     public CanvasUI canvas;
-    private Deck deck;
-    private List<Card> createdCards;
+    public CardSelection cardSelection;
     // Start is called before the first frame update
     void Start()
     {
         seed = InfoBetweenScenes.seedToUse;
         seed = (seed == 0) ? new System.Random().Next() : seed;
         InfoBetweenScenes.seed = seed;
+        cardSelection.seed = seed;
         canvas.UpdateSeedLabel(seed);
         resourceManager.initResources(seed);
-
-        deck = new Deck(seed);
-        createdCards = new List<Card>();
-
-        generate3Cards();
     }
 
     // Update is called once per frame
@@ -36,13 +31,11 @@ public class GameDirector : MonoBehaviour
 
     public void NextTurn()
     {
-        destoryCards();
-        resourceManager.ResourceUpdate();
         if (!checkEndGame())
         {
-            Debug.Log("----New turn----" + deck.Count);
-            generate3Cards();
+            GameObject.Find("Parent").BroadcastMessage("OnGameDirectorNewTurnStarted", SendMessageOptions.DontRequireReceiver);
         }
+        
     }
 
     private bool checkEndGame()
@@ -58,30 +51,20 @@ public class GameDirector : MonoBehaviour
         return false;
     }
 
-    private void destoryCards()
+    public void OnCardSelectionCardSelectedFinished()
     {
-        foreach(var card in createdCards)
-        {
-            Destroy(card.gameObject);
-        }
-
-        createdCards = new List<Card>();
+        resourceManager.ResourceUpdate();
     }
 
-    private void generate3Cards()
+    public void OnResourceManagerResourceUpdateFinished()
     {
-        try
-        {
-            createdCards.Add(Instantiate(card, new Vector3(0, -2, 0), Quaternion.identity).cloneProperties(deck.GetNextCard()));
-            createdCards.Add(Instantiate(card, new Vector3(4, -2, 0), Quaternion.identity).cloneProperties(deck.GetNextCard()));
-            createdCards.Add(Instantiate(card, new Vector3(-4, -2, 0), Quaternion.identity).cloneProperties(deck.GetNextCard()));
-            canvas.UpdateRemainingCardsLabel(deck.Count);
-        }catch(System.InvalidOperationException e)
-        {
-            InfoBetweenScenes.isWin = true;
-            Debug.Log(e.Message);
-            Debug.Log("WINNER");
-            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
-        }
+        NextTurn();
+    }
+
+    public void OnCardSelectionOutOfCards()
+    {
+        InfoBetweenScenes.isWin = true;
+        Debug.Log("WINNER");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
     }
 }

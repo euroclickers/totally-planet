@@ -17,17 +17,17 @@ public class CanvasUI : MonoBehaviour
 
     }
 
-    public void UpdateResourceManagerText(
+    public void UpdateResourceManager(
         double water,
         double population,
         double temperature,
         double nature
     )
     {
-        transform.Find("waterLabel").GetComponent<Text>().text = "Water: " + (int) water;
-        transform.Find("populationLabel").GetComponent<Text>().text = "Population: " + (int) population;
-        transform.Find("temperatureLabel").GetComponent<Text>().text = "Temperature: " + (int) temperature;
-        transform.Find("natureLabel").GetComponent<Text>().text = "Nature: " + (int) nature;
+        transform.Find("resources").Find("water").Find("fill").GetComponent<Image>().fillAmount = (float) water / 100;
+        transform.Find("resources").Find("nature").Find("fill").GetComponent<Image>().fillAmount = (float) nature / 100;
+        transform.Find("resources").Find("temperature").Find("fill").GetComponent<Image>().fillAmount = (float) temperature / 100;
+        transform.Find("resources").Find("population").Find("fill").GetComponent<Image>().fillAmount = (float) population / 100;
     }
 
     public void UpdateRemainingCardsLabel (int remainingCards)
