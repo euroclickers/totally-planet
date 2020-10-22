@@ -67,7 +67,7 @@ public class CanvasUI : MonoBehaviour
             resourceUpdate.transform.name = "ResourceUpdate";
             resourceUpdate.transform.parent = parentToAttach.transform;
             resourceUpdate.transform.localScale = new Vector3(100, 100, 1);
-            resourceUpdate.transform.localPosition = new Vector3(20, 30, -20);
+            resourceUpdate.transform.localPosition = new Vector3(20, 30, -500);
             resourceUpdateUIsCreated.Add(resourceUpdate);
 
         }

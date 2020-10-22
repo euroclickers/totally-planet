@@ -43,13 +43,17 @@ public class CardSelection : MonoBehaviour
             createdCards.Add(card3);
             card3.transform.name = "Card3";
 
-            //canvas.UpdateRemainingCardsLabel(deck.Count);
         }
         catch (System.InvalidOperationException e)
         {
             GameObject.Find("Parent").BroadcastMessage("OnCardSelectionOutOfCards", SendMessageOptions.DontRequireReceiver);
             
         }
+    }
+
+    public int getRemainingTurns()
+    {
+        return (deck.Count / 3) + 1;
     }
 
     public void OnCardSelected(Card card)

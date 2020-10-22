@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Resources;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameDirector : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class GameDirector : MonoBehaviour
         cardSelection.seed = seed;
         canvas.UpdateSeedLabel(seed);
         resourceManager.initResources(seed);
+        canvas.transform.Find("DeckRemainingCardsLabel").GetComponent<Text>().text = cardSelection.getRemainingTurns().ToString();
     }
 
     // Update is called once per frame
@@ -34,6 +36,7 @@ public class GameDirector : MonoBehaviour
         if (!checkEndGame())
         {
             GameObject.Find("Parent").BroadcastMessage("OnGameDirectorNewTurnStarted", SendMessageOptions.DontRequireReceiver);
+            canvas.transform.Find("DeckRemainingCardsLabel").GetComponent<Text>().text = cardSelection.getRemainingTurns().ToString();
         }
         
     }

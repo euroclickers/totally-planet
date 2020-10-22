@@ -14,7 +14,7 @@ public class EffectUI : MonoBehaviour
     public Sprite modfierUp;
     public Sprite modifierDown;
 
-    private float speed = 1f;
+    private float speed = 10f;
     
     // Start is called before the first frame update
     void Start()
@@ -72,7 +72,7 @@ public class EffectUI : MonoBehaviour
                 
             }else
             {
-                var currentSpeed = speed + (3000 * Time.deltaTime);
+                var currentSpeed = speed;
                 transform.position = Vector3.MoveTowards(transform.position, destination, currentSpeed * Time.deltaTime);
             }
 
